@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: create-an-llm
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /.well-known/*
+        destination: /.well-known/:splat
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: 20 
