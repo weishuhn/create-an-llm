@@ -4,7 +4,7 @@ theme: dracula
 title: LLMs from Scratch
 info: |
   Understanding AI chatbots from raw data to working model.
-  Presented by [Your Name]
+  Presented by Michael Weishuhn
 
 class: text-center
 drawings: 
